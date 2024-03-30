@@ -287,7 +287,7 @@ public with sharing class DMLOperations {
             acctId = acct[0].Id;
 
         } 
-        System.debug(acctId);       
+            
 
         Map<String, Opportunity> existingOppsMap = new Map<String, Opportunity>();
         for(Opportunity opp : [SELECT Id, Name FROM Opportunity WHERE Name IN :oppNames]) {
@@ -310,7 +310,7 @@ public with sharing class DMLOperations {
                  AccountId = acctId
                 
              );    
-             System.debug(newOpp);               
+                           
              updateOpps.add(newOpp);
                 
             }

@@ -5,6 +5,6 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+List<String> oppNames = new List<String>{'Opp 1', 'Opp 2', 'Opp 3'};
+
+DMLOperations.upsertOpportunities('Test Account', oppNames);
